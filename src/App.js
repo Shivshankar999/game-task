@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Game from "./components/Game";
+import GameImg from "./components/GameImg";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="m-auto  w-[700px] h-[550px] mt-20 border border-black bg-green-100">
+      <div className="w-full h-24 bg-green-400">
+        <Header />
+      </div>
+      <div className="flex justify-between mr-8 h-[454px]  w-[700px]">
+        <GameImg />
+        <Game />
+      </div>
     </div>
   );
 }
